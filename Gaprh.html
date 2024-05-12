@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<!-- saved from url=(1467)https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0A%20%20start%20-%3E%20studying%20%5Blabel%20%3D%20%22Play%20in%20Doom%22%5D%0A%20%20start%20-%3E%20eat%20%5Blabel%20%3D%20%22Basic%20needs%2FSelf-improvement%22%5D%0A%20%20studying%20-%3E%20studying%20%5Blabel%20%3D%20%22Play%20in%20Doom%20and%20%3E4%20hours%20of%20studying%22%5D%0A%20%20studying%20-%3E%20eat%20%5Blabel%20%3D%20%22Basic%20needs%22%5D%0A%20%20studying%20-%3E%20pull_up%20%5Blabel%20%3D%20%22Self-improvement%22%5D%0A%20%20studying%20-%3E%20doom_eternal%20%5Blabel%20%3D%20%22Play%20in%20Doom%20and%20%3C4%20hours%20of%20studying%22%5D%0A%20%20eat%20-%3E%20sleep%20%5Blabel%20%3D%20%22Basic%20needs%22%5D%0A%20%20eat%20-%3E%20studying%20%5Blabel%20%3D%20%22Self-improvement%22%5D%0A%20%20sleep%20-%3E%20studying%20%5Blabel%20%3D%20%22Self-improvement%22%5D%0A%20%20sleep%20-%3E%20eat%20%5Blabel%20%3D%20%22Basic%20needs%22%5D%0A%20%20pull_up%20-%3E%20studying%20%5Blabel%20%3D%20%22Play%20in%20Doom%20and%20%3E4%20hours%20of%20studying%22%5D%0A%20%20pull_up%20-%3E%20doom_eternal%20%5Blabel%20%3D%20%22Play%20in%20Doom%20and%20%3C4%20hours%20of%20studying%22%5D%0A%20%20pull_up%20-%3E%20eat%20%5Blabel%20%3D%20%22Basic%20needs%22%5D%0A%20%20doom_eternal%20-%3E%20doom_eternal%20%22Play%20in%20Doom%2FSelf-improvement%22%0A%20%20doom_eternal%20-%3E%20end%20%5Blabel%20%3D%20%22Basic%20needs%22%5D%0A%0A%20%20start%20%5Bshape%3DMdiamond%5D%3B%0A%20%20end%20%5Bshape%3DMsquare%5D%3B%0A%7D -->
+<html lang="utf-8"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="ace-twilight">.ace-twilight .ace_gutter {background: #232323;color: #E2E2E2}.ace-twilight .ace_print-margin {width: 1px;background: #232323}.ace-twilight {background-color: #141414;color: #F8F8F8}.ace-twilight .ace_cursor {color: #A7A7A7}.ace-twilight .ace_marker-layer .ace_selection {background: rgba(221, 240, 255, 0.20)}.ace-twilight.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #141414;}.ace-twilight .ace_marker-layer .ace_step {background: rgb(102, 82, 0)}.ace-twilight .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgba(255, 255, 255, 0.25)}.ace-twilight .ace_marker-layer .ace_active-line {background: rgba(255, 255, 255, 0.031)}.ace-twilight .ace_gutter-active-line {background-color: rgba(255, 255, 255, 0.031)}.ace-twilight .ace_marker-layer .ace_selected-word {border: 1px solid rgba(221, 240, 255, 0.20)}.ace-twilight .ace_invisible {color: rgba(255, 255, 255, 0.25)}.ace-twilight .ace_keyword,.ace-twilight .ace_meta {color: #CDA869}.ace-twilight .ace_constant,.ace-twilight .ace_constant.ace_character,.ace-twilight .ace_constant.ace_character.ace_escape,.ace-twilight .ace_constant.ace_other,.ace-twilight .ace_heading,.ace-twilight .ace_markup.ace_heading,.ace-twilight .ace_support.ace_constant {color: #CF6A4C}.ace-twilight .ace_invalid.ace_illegal {color: #F8F8F8;background-color: rgba(86, 45, 86, 0.75)}.ace-twilight .ace_invalid.ace_deprecated {text-decoration: underline;font-style: italic;color: #D2A8A1}.ace-twilight .ace_support {color: #9B859D}.ace-twilight .ace_fold {background-color: #AC885B;border-color: #F8F8F8}.ace-twilight .ace_support.ace_function {color: #DAD085}.ace-twilight .ace_list,.ace-twilight .ace_markup.ace_list,.ace-twilight .ace_storage {color: #F9EE98}.ace-twilight .ace_entity.ace_name.ace_function,.ace-twilight .ace_meta.ace_tag,.ace-twilight .ace_variable {color: #AC885B}.ace-twilight .ace_string {color: #8F9D6A}.ace-twilight .ace_string.ace_regexp {color: #E9C062}.ace-twilight .ace_comment {font-style: italic;color: #5F5A60}.ace-twilight .ace_variable {color: #7587A6}.ace-twilight .ace_xml-pe {color: #494949}.ace-twilight .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWMQERFpYLC1tf0PAAgOAnPnhxyiAAAAAElFTkSuQmCC) right repeat-y}
+/*# sourceURL=ace/css/ace-twilight */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style id="ace_editor.css">.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;contain: style size layout;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;contain: style size layout;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {position: absolute;top: 0;left: 0;right: 0;padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {contain: strict;position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;contain: strict;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: transparent;color: inherit;z-index: 1000;opacity: 1;}.ace_composition_placeholder { color: transparent }.ace_composition_marker { border-bottom: 1px solid;position: absolute;border-radius: 0;margin-top: 1px;}[ace_nocontext=true] {transform: none!important;filter: none!important;perspective: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;height: 1000000px;contain: style size layout;}.ace_text-layer {font: inherit !important;position: absolute;height: 1000000px;width: 1000000px;contain: style size layout;}.ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group {contain: style size layout;position: absolute;top: 0;left: 0;right: 0;}.ace_hidpi .ace_text-layer,.ace_hidpi .ace_gutter-layer,.ace_hidpi .ace_content,.ace_hidpi .ace_gutter {contain: strict;will-change: transform;}.ace_hidpi .ace_text-layer > .ace_line, .ace_hidpi .ace_text-layer > .ace_line_group {contain: strict;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_animate-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: step-end;animation-name: blink-ace-animate;animation-iteration-count: infinite;}.ace_animate-blinking.ace_smooth-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: ease-in-out;animation-name: blink-ace-animate-smooth;}@keyframes blink-ace-animate {from, to { opacity: 1; }60% { opacity: 0; }}@keyframes blink-ace-animate-smooth {from, to { opacity: 1; }45% { opacity: 1; }60% { opacity: 0; }85% { opacity: 0; }}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
+/*# sourceURL=ace/css/ace_editor.css */</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Graphviz Online</title>
+    <style type="text/css" media="screen">
+        body {
+            overflow: hidden;
+            margin: 0 0;
+        }
+
+        #editor {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 50%;
+            left: 0;
+        }
+
+        #review {
+            margin: 0;
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            overflow: scroll;
+        }
+
+        #options {
+            margin: 0;
+            position: fixed;
+            left: 50%;
+            width: 100%;
+        }
+
+        #options {
+            flex: 0 0 auto;
+            background: #eee;
+            border-bottom: 1px solid #ccc;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #options label {
+            margin-right: 8px;
+        }
+
+        #options #raw.disabled {
+            opacity: 0.5;
+        }
+
+        #shareurl {
+            display: none;
+        }
+
+        #status {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            display: block;
+            color: #FFF;
+            z-index: 999;
+        }
+
+        #review svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #review #text {
+            font-size: 12px;
+            font-family: monaco, courier, monospace;
+            white-space: pre;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        #review img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #review.working svg, #output.error svg,
+        #review.working #text, #output.error #text,
+        #review.working img, #output.error img {
+            opacity: 0.4;
+        }
+
+        #review.error #error {
+            display: inherit;
+        }
+
+        #review #error {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            margin-right: 20px;
+            background: red;
+            color: white;
+            z-index: 1;
+        }
+
+        #download {
+            font: bold 12px Arial;
+            text-decoration: none;
+            background-color: #EEEEEE;
+            color: #333333;
+            padding: 2px 6px 2px 6px;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+        }
+
+    </style>
+<script src="./Gaprh_files/theme-twilight.js.завантаження"></script><script src="./Gaprh_files/mode-dot.js.завантаження"></script></head>
+<body>
+<pre id="editor" class=" ace_editor ace-twilight ace_dark ace_focus" draggable="false"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; top: 230px; left: 340px;"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 47px;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="height: 1e+06px; top: 0px; left: 0px; width: 47px;"><div class="ace_gutter-cell " style="height: 14.3906px; top: 0px;">1<span class="ace_fold-widget ace_start ace_open" style="display: inline-block; height: 14.3906px;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 14.3906px;">2<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 28.7812px;">3<span class="ace_fold-widget ace_start ace_open" style="display: none; height: 14.3906px;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 43.1719px;">4<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 57.5625px;">5<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 71.9531px;">6<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 86.3438px;">7<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 100.734px;">8<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 115.125px;">9<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 129.516px;">10<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 143.906px;">11<span class="ace_fold-widget ace_start ace_open" style="display: none; height: 14.3906px;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 158.297px;">12<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 172.688px;">13<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 187.078px;">14<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 201.469px;">15<span style="display: none;"></span></div><div class="ace_gutter-cell ace_gutter-active-line " style="height: 14.3906px; top: 215.859px;">16<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 230.25px;">17<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 244.641px;">18<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 259.031px;">19<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 273.422px;">20<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 14.3906px; top: 287.812px;">21<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="left: 46.1953px; right: 0px; bottom: 0px;"><div class="ace_content" style="top: 0px; left: 0px; width: 721.805px; height: 854.781px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 532px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height: 14.3906px; top: 215.859px; left: 0px; right: 0px;"></div></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; top: 0px; left: 0px;"><div class="ace_line" style="height: 14.3906px; top: 0px;"><span class="ace_keyword">digraph</span> G <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height: 14.3906px; top: 14.3906px;"></div><div class="ace_line" style="height: 14.3906px; top: 28.7812px;">  <span class="ace_variable">start</span> <span class="ace_keyword ace_operator">-&gt;</span> studying <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Play in Doom"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 43.1719px;">  <span class="ace_variable">start</span> <span class="ace_keyword ace_operator">-&gt;</span> eat <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Basic needs/Self-improvement"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 57.5625px;">  studying <span class="ace_keyword ace_operator">-&gt;</span> studying <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Play in Doom and &gt;4 hours of studying"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 71.9531px;">  studying <span class="ace_keyword ace_operator">-&gt;</span> eat <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Basic needs"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 86.3438px;">  studying <span class="ace_keyword ace_operator">-&gt;</span> pull_up <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Self-improvement"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 100.734px;">  studying <span class="ace_keyword ace_operator">-&gt;</span> doom_eternal <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Play in Doom and &lt;4 hours of studying"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 115.125px;">  eat <span class="ace_keyword ace_operator">-&gt;</span> sleep <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Basic needs"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 129.516px;">  eat <span class="ace_keyword ace_operator">-&gt;</span> studying <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Self-improvement"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 143.906px;">  sleep <span class="ace_keyword ace_operator">-&gt;</span> studying <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Self-improvement"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 158.297px;">  sleep <span class="ace_keyword ace_operator">-&gt;</span> eat <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Basic needs"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 172.688px;">  pull_up <span class="ace_keyword ace_operator">-&gt;</span> studying <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Play in Doom and &gt;4 hours of studying"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 187.078px;">  pull_up <span class="ace_keyword ace_operator">-&gt;</span> doom_eternal <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Play in Doom and &lt;4 hours of studying"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 201.469px;">  pull_up <span class="ace_keyword ace_operator">-&gt;</span> eat <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Basic needs"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 215.859px;">  doom_eternal <span class="ace_keyword ace_operator">-&gt;</span> doom_eternal <span class="ace_string">"Play in Doom/Self-improvement"</span></div><div class="ace_line" style="height: 14.3906px; top: 230.25px;">  doom_eternal <span class="ace_keyword ace_operator">-&gt;</span> end <span class="ace_paren ace_lparen">[</span><span class="ace_variable">label</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">"Basic needs"</span><span class="ace_paren ace_rparen">]</span></div><div class="ace_line" style="height: 14.3906px; top: 244.641px;"></div><div class="ace_line" style="height: 14.3906px; top: 259.031px;">  <span class="ace_variable">start</span> <span class="ace_paren ace_lparen">[</span><span class="ace_variable">shape</span><span class="ace_keyword ace_operator">=</span>Mdiamond<span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height: 14.3906px; top: 273.422px;">  end <span class="ace_paren ace_lparen">[</span><span class="ace_variable">shape</span><span class="ace_keyword ace_operator">=</span>Msquare<span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height: 14.3906px; top: 287.812px;"><span class="ace_paren ace_rparen">}</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_animate-blinking"><div class="ace_cursor" style="display: block; top: 216px; left: 294px; width: 7px; height: 14.3906px; animation-duration: 1000ms;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 302.203px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 46.1953px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 721px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></pre>
+<div id="options">
+    <label id="engine">
+        Engine:
+        <select>
+            <option>circo</option>
+            <option selected="">dot</option>
+            <option>fdp</option>
+            <option>neato</option>
+            <option>osage</option>
+            <option>twopi</option>
+        </select>
+    </label>
+
+    <label id="format">
+        Format:
+        <select>
+            <option selected="">svg</option>
+            <option>png-image-element</option>
+            <option>json</option>
+            <option>xdot</option>
+            <option>plain</option>
+            <option>ps</option>
+        </select>
+    </label>
+
+    <label id="raw" class="">
+        <input type="checkbox"> Show raw output
+    </label>
+
+    <label>
+      <a href="data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3C!--%20Generated%20by%20graphviz%20version%202.40.1%20(20161225.0304)%0A%20--%3E%3C!--%20Title%3A%20G%20Pages%3A%201%20--%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221061pt%22%20height%3D%22399pt%22%20viewBox%3D%220.00%200.00%201061.49%20399.41%22%3E%0A%3Cg%20id%3D%22graph0%22%20class%3D%22graph%22%20transform%3D%22scale(1%201)%20rotate(0)%20translate(4%20395.4146)%22%3E%0A%3Ctitle%3EG%3C%2Ftitle%3E%0A%3Cpolygon%20fill%3D%22%23ffffff%22%20stroke%3D%22transparent%22%20points%3D%22-4%2C4%20-4%2C-395.4146%201057.4949%2C-395.4146%201057.4949%2C4%20-4%2C4%22%2F%3E%0A%3C!--%20start%20--%3E%0A%3Cg%20id%3D%22node1%22%20class%3D%22node%22%3E%0A%3Ctitle%3Estart%3C%2Ftitle%3E%0A%3Cpolygon%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%2239.1185%2C-391.4146%20-.1188%2C-373.4146%2039.1185%2C-355.4146%2078.3558%2C-373.4146%2039.1185%2C-391.4146%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%2210.7882%2C-378.4182%2010.7882%2C-368.411%20%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%2228.2114%2C-360.4182%2050.0255%2C-360.4182%20%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%2267.4487%2C-368.411%2067.4487%2C-378.4182%20%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%2250.0255%2C-386.411%2028.2114%2C-386.411%20%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%2239.1185%22%20y%3D%22-369.2146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3Estart%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20studying%20--%3E%0A%3Cg%20id%3D%22node2%22%20class%3D%22node%22%3E%0A%3Ctitle%3Estudying%3C%2Ftitle%3E%0A%3Cellipse%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20cx%3D%22377.1185%22%20cy%3D%22-284.6146%22%20rx%3D%2244.1045%22%20ry%3D%2218%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22377.1185%22%20y%3D%22-280.4146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3Estudying%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20start%26%2345%3B%26gt%3Bstudying%20--%3E%0A%3Cg%20id%3D%22edge1%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Estart-%26gt%3Bstudying%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M60.4347%2C-364.7976C68.6931%2C-361.6242%2078.2735%2C-358.1421%2087.1185%2C-355.4146%20170.2795%2C-329.7708%20269.1156%2C-307.3068%20327.2838%2C-294.8842%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22328.2537%2C-298.2564%20337.3093%2C-292.7567%20326.8005%2C-291.4089%20328.2537%2C-298.2564%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22253.0063%22%20y%3D%22-324.8146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EPlay%20in%20Doom%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20eat%20--%3E%0A%3Cg%20id%3D%22node3%22%20class%3D%22node%22%3E%0A%3Ctitle%3Eeat%3C%2Ftitle%3E%0A%3Cellipse%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20cx%3D%22348.1185%22%20cy%3D%22-107.0146%22%20rx%3D%2227%22%20ry%3D%2218%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22348.1185%22%20y%3D%22-102.8146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3Eeat%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20start%26%2345%3B%26gt%3Beat%20--%3E%0A%3Cg%20id%3D%22edge2%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Estart-%26gt%3Beat%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M40.7857%2C-356.1341C44.399%2C-327.2435%2055.3524%2C-268.681%2086.8919%2C-231.8146%20147.0263%2C-161.5235%20255.7124%2C-127.7972%20312.0593%2C-114.3911%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22312.9851%2C-117.7697%20321.948%2C-112.1202%20311.4182%2C-110.9473%20312.9851%2C-117.7697%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22173.2318%22%20y%3D%22-236.0146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EBasic%20needs%2FSelf-improvement%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20studying%26%2345%3B%26gt%3Bstudying%20--%3E%0A%3Cg%20id%3D%22edge3%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Estudying-%26gt%3Bstudying%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M416.6636%2C-292.8626C429.3586%2C-292.778%20439.4203%2C-290.0287%20439.4203%2C-284.6146%20439.4203%2C-280.8078%20434.4459%2C-278.3185%20427.0794%2C-277.1465%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22426.897%2C-273.6232%20416.6636%2C-276.3666%20426.3743%2C-280.6036%20426.897%2C-273.6232%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22550.1085%22%20y%3D%22-280.4146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EPlay%20in%20Doom%20and%20%26gt%3B4%20hours%20of%20studying%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20studying%26%2345%3B%26gt%3Beat%20--%3E%0A%3Cg%20id%3D%22edge4%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Estudying-%26gt%3Beat%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M370.287%2C-266.5026C368.3677%2C-260.8415%20366.4448%2C-254.5287%20365.1185%2C-248.6146%20356.4224%2C-209.8391%20351.9482%2C-164.0273%20349.8203%2C-135.2425%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22353.3%2C-134.8278%20349.1156%2C-125.0943%20346.3168%2C-135.3127%20353.3%2C-134.8278%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22392.3559%22%20y%3D%22-191.6146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EBasic%20needs%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20pull_up%20--%3E%0A%3Cg%20id%3D%22node4%22%20class%3D%22node%22%3E%0A%3Ctitle%3Epull_up%3C%2Ftitle%3E%0A%3Cellipse%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20cx%3D%22485.1185%22%20cy%3D%22-195.8146%22%20rx%3D%2240.5925%22%20ry%3D%2218%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22485.1185%22%20y%3D%22-191.6146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3Epull_up%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20studying%26%2345%3B%26gt%3Bpull_up%20--%3E%0A%3Cg%20id%3D%22edge5%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Estudying-%26gt%3Bpull_up%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M420.4229%2C-280.5947C481.7267%2C-274.4607%20587.6847%2C-262.0519%20599.1185%2C-248.6146%20621.0098%2C-222.8874%20574.6893%2C-208.9642%20534.6784%2C-201.9789%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22535.1204%2C-198.5048%20524.6874%2C-200.3495%20533.9936%2C-205.4135%20535.1204%2C-198.5048%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22655.0491%22%20y%3D%22-236.0146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3ESelf-improvement%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20doom_eternal%20--%3E%0A%3Cg%20id%3D%22node5%22%20class%3D%22node%22%3E%0A%3Ctitle%3Edoom_eternal%3C%2Ftitle%3E%0A%3Cellipse%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20cx%3D%22842.1185%22%20cy%3D%22-107.0146%22%20rx%3D%2264.2669%22%20ry%3D%2218%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22842.1185%22%20y%3D%22-102.8146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3Edoom_eternal%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20studying%26%2345%3B%26gt%3Bdoom_eternal%20--%3E%0A%3Cg%20id%3D%22edge6%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Estudying-%26gt%3Bdoom_eternal%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M421.6832%2C-284.0704C508.0026%2C-282.4119%20694.5716%2C-275.7059%20752.1185%2C-248.6146%20802.6737%2C-224.8148%20819.2184%2C-211.2213%20841.1185%2C-159.8146%20844.3166%2C-152.3076%20845.4118%2C-143.6387%20845.4799%2C-135.523%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22848.9685%2C-135.1679%20845.0681%2C-125.3172%20841.9742%2C-135.4502%20848.9685%2C-135.1679%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22942.8067%22%20y%3D%22-191.6146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EPlay%20in%20Doom%20and%20%26lt%3B4%20hours%20of%20studying%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20eat%26%2345%3B%26gt%3Bstudying%20--%3E%0A%3Cg%20id%3D%22edge8%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Eeat-%26gt%3Bstudying%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M325.29%2C-117.0635C288.8584%2C-134.6002%20224.024%2C-172.85%20248.2573%2C-213.8146%20265.7722%2C-243.4222%20300.5573%2C-261.4778%20329.5757%2C-271.939%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22328.5679%2C-275.2931%20339.1624%2C-275.2013%20330.823%2C-268.6663%20328.5679%2C-275.2931%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22300.0491%22%20y%3D%22-191.6146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3ESelf-improvement%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20sleep%20--%3E%0A%3Cg%20id%3D%22node6%22%20class%3D%22node%22%3E%0A%3Ctitle%3Esleep%3C%2Ftitle%3E%0A%3Cellipse%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20cx%3D%22437.1185%22%20cy%3D%22-18.1073%22%20rx%3D%2230.7558%22%20ry%3D%2218%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22437.1185%22%20y%3D%22-13.9073%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3Esleep%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20eat%26%2345%3B%26gt%3Bsleep%20--%3E%0A%3Cg%20id%3D%22edge7%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Eeat-%26gt%3Bsleep%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M372.4591%2C-98.6835C386.498%2C-92.8231%20403.5955%2C-83.7385%20415.1185%2C-71.0146%20421.6197%2C-63.8358%20426.3579%2C-54.4651%20429.7338%2C-45.6079%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22433.1049%2C-46.5646%20432.9879%2C-35.9704%20426.4727%2C-44.3252%20433.1049%2C-46.5646%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22459.3559%22%20y%3D%22-58.4146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EBasic%20needs%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20pull_up%26%2345%3B%26gt%3Bstudying%20--%3E%0A%3Cg%20id%3D%22edge11%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Epull_up-%26gt%3Bstudying%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M449.8421%2C-204.9888C419.0025%2C-213.3633%20378.4203%2C-225.386%20373.7421%2C-231.8146%20368.6701%2C-238.7844%20367.7704%2C-247.7394%20368.6656%2C-256.2877%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22365.2621%2C-257.1357%20370.4879%2C-266.3521%20372.1501%2C-255.8884%20365.2621%2C-257.1357%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22484.8067%22%20y%3D%22-236.0146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EPlay%20in%20Doom%20and%20%26gt%3B4%20hours%20of%20studying%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20pull_up%26%2345%3B%26gt%3Beat%20--%3E%0A%3Cg%20id%3D%22edge13%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Epull_up-%26gt%3Beat%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M451.8992%2C-185.3413C435.3905%2C-179.285%20415.6114%2C-170.6948%20399.6437%2C-159.8146%20387.784%2C-151.7336%20376.4354%2C-140.6118%20367.4224%2C-130.6589%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22369.9481%2C-128.2303%20360.7297%2C-123.008%20364.6794%2C-132.8391%20369.9481%2C-128.2303%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22433.3559%22%20y%3D%22-147.2146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EBasic%20needs%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20pull_up%26%2345%3B%26gt%3Bdoom_eternal%20--%3E%0A%3Cg%20id%3D%22edge12%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Epull_up-%26gt%3Bdoom_eternal%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M483.3514%2C-177.816C483.2774%2C-166.1985%20485.3749%2C-151.6868%20494.7421%2C-143.0146%20514.3814%2C-124.8325%20672.1779%2C-114.6059%20768.2116%2C-110.0101%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22768.6284%2C-113.4945%20778.4535%2C-109.53%20768.3006%2C-106.5022%20768.6284%2C-113.4945%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22604.8067%22%20y%3D%22-147.2146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EPlay%20in%20Doom%20and%20%26lt%3B4%20hours%20of%20studying%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20doom_eternal%26%2345%3B%26gt%3Bdoom_eternal%20--%3E%0A%3Cg%20id%3D%22edge14%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Edoom_eternal-%26gt%3Bdoom_eternal%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M899.688%2C-115.1357C913.7712%2C-114.5341%20924.2518%2C-111.8271%20924.2518%2C-107.0146%20924.2518%2C-103.4428%20918.4786%2C-101.0308%20909.7442%2C-99.7786%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22909.9564%2C-96.2838%20899.688%2C-98.8935%20909.3426%2C-103.2569%20909.9564%2C-96.2838%22%2F%3E%0A%3C%2Fg%3E%0A%3C!--%20end%20--%3E%0A%3Cg%20id%3D%22node8%22%20class%3D%22node%22%3E%0A%3Ctitle%3Eend%3C%2Ftitle%3E%0A%3Cpolygon%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%22860.3337%2C-36.3225%20823.9032%2C-36.3225%20823.9032%2C.1079%20860.3337%2C.1079%20860.3337%2C-36.3225%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%22835.9032%2C-36.3225%20823.9032%2C-24.3225%20%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%22823.9032%2C-11.8921%20835.9032%2C.1079%20%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%22848.3337%2C.1079%20860.3337%2C-11.8921%20%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20points%3D%22860.3337%2C-24.3225%20848.3337%2C-36.3225%20%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22842.1185%22%20y%3D%22-13.9073%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3Eend%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20doom_eternal%26%2345%3B%26gt%3Bend%20--%3E%0A%3Cg%20id%3D%22edge15%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Edoom_eternal-%26gt%3Bend%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M842.1185%2C-88.5929C842.1185%2C-76.5529%20842.1185%2C-60.5791%20842.1185%2C-46.8827%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22845.6186%2C-46.5053%20842.1185%2C-36.5054%20838.6186%2C-46.5054%20845.6186%2C-46.5053%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22875.3559%22%20y%3D%22-58.4146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EBasic%20needs%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20sleep%26%2345%3B%26gt%3Bstudying%20--%3E%0A%3Cg%20id%3D%22edge9%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Esleep-%26gt%3Bstudying%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M467.9694%2C-21.2716C528.099%2C-29.2913%20659.9891%2C-56.388%20716.1185%2C-143.0146%20741.6809%2C-182.466%20742.6837%2C-214.7124%20710.1185%2C-248.6146%20691.2286%2C-268.28%20521.2456%2C-278.4544%20431.7249%2C-282.4885%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22431.3208%2C-279.0028%20421.4843%2C-282.939%20431.6285%2C-285.996%20431.3208%2C-279.0028%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22776.0491%22%20y%3D%22-147.2146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3ESelf-improvement%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20sleep%26%2345%3B%26gt%3Beat%20--%3E%0A%3Cg%20id%3D%22edge10%22%20class%3D%22edge%22%3E%0A%3Ctitle%3Esleep-%26gt%3Beat%3C%2Ftitle%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M408.812%2C-25.3829C384.489%2C-32.2749%20352.1777%2C-43.185%20344.6437%2C-54.2146%20339.6532%2C-61.5206%20338.9096%2C-70.8027%20339.9237%2C-79.5398%22%2F%3E%0A%3Cpolygon%20fill%3D%22%23000000%22%20stroke%3D%22%23000000%22%20points%3D%22336.4886%2C-80.2119%20341.7724%2C-89.3952%20343.3686%2C-78.9213%20336.4886%2C-80.2119%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22378.3559%22%20y%3D%22-58.4146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EBasic%20needs%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C!--%20Play%20in%20Doom%2FSelf%26%2345%3Bimprovement%20--%3E%0A%3Cg%20id%3D%22node7%22%20class%3D%22node%22%3E%0A%3Ctitle%3EPlay%20in%20Doom%2FSelf-improvement%3C%2Ftitle%3E%0A%3Cellipse%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20cx%3D%22234.1185%22%20cy%3D%22-373.4146%22%20rx%3D%22137.7608%22%20ry%3D%2218%22%2F%3E%0A%3Ctext%20text-anchor%3D%22middle%22%20x%3D%22234.1185%22%20y%3D%22-369.2146%22%20font-family%3D%22Times%2Cserif%22%20font-size%3D%2214.00%22%20fill%3D%22%23000000%22%3EPlay%20in%20Doom%2FSelf-improvement%3C%2Ftext%3E%0A%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E" target="_blank" id="download" download="graphviz.svg">Download</a>
+    </label>
+
+    <label>
+        <input type="button" value="Share" id="share">
+    </label>
+
+    <input type="input" value="" id="shareurl">
+
+</div>
+<div id="review" class="">
+    <div id="error">syntax error in line 3 near ']'
+</div>
+<a><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1061pt" height="399pt" xmlns:ev="http://www.w3.org/2001/xml-events" style="overflow: hidden; "><g id="viewport-20240512194041742" class="svg-pan-zoom_viewport" transform="matrix(0.7074960668494287,0,0,0.7074960668494287,0,238.20949796983484)" style="transform: matrix(0.707496, 0, 0, 0.707496, 0, 238.209);">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 395.4146)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-395.4146 1057.4949,-395.4146 1057.4949,4 -4,4"></polygon>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<polygon fill="none" stroke="#000000" points="39.1185,-391.4146 -.1188,-373.4146 39.1185,-355.4146 78.3558,-373.4146 39.1185,-391.4146"></polygon>
+<polyline fill="none" stroke="#000000" points="10.7882,-378.4182 10.7882,-368.411 "></polyline>
+<polyline fill="none" stroke="#000000" points="28.2114,-360.4182 50.0255,-360.4182 "></polyline>
+<polyline fill="none" stroke="#000000" points="67.4487,-368.411 67.4487,-378.4182 "></polyline>
+<polyline fill="none" stroke="#000000" points="50.0255,-386.411 28.2114,-386.411 "></polyline>
+<text text-anchor="middle" x="39.1185" y="-369.2146" font-family="Times,serif" font-size="14.00" fill="#000000">start</text>
+</g>
+<!-- studying -->
+<g id="node2" class="node">
+<title>studying</title>
+<ellipse fill="none" stroke="#000000" cx="377.1185" cy="-284.6146" rx="44.1045" ry="18"></ellipse>
+<text text-anchor="middle" x="377.1185" y="-280.4146" font-family="Times,serif" font-size="14.00" fill="#000000">studying</text>
+</g>
+<!-- start&#45;&gt;studying -->
+<g id="edge1" class="edge">
+<title>start-&gt;studying</title>
+<path fill="none" stroke="#000000" d="M60.4347,-364.7976C68.6931,-361.6242 78.2735,-358.1421 87.1185,-355.4146 170.2795,-329.7708 269.1156,-307.3068 327.2838,-294.8842"></path>
+<polygon fill="#000000" stroke="#000000" points="328.2537,-298.2564 337.3093,-292.7567 326.8005,-291.4089 328.2537,-298.2564"></polygon>
+<text text-anchor="middle" x="253.0063" y="-324.8146" font-family="Times,serif" font-size="14.00" fill="#000000">Play in Doom</text>
+</g>
+<!-- eat -->
+<g id="node3" class="node">
+<title>eat</title>
+<ellipse fill="none" stroke="#000000" cx="348.1185" cy="-107.0146" rx="27" ry="18"></ellipse>
+<text text-anchor="middle" x="348.1185" y="-102.8146" font-family="Times,serif" font-size="14.00" fill="#000000">eat</text>
+</g>
+<!-- start&#45;&gt;eat -->
+<g id="edge2" class="edge">
+<title>start-&gt;eat</title>
+<path fill="none" stroke="#000000" d="M40.7857,-356.1341C44.399,-327.2435 55.3524,-268.681 86.8919,-231.8146 147.0263,-161.5235 255.7124,-127.7972 312.0593,-114.3911"></path>
+<polygon fill="#000000" stroke="#000000" points="312.9851,-117.7697 321.948,-112.1202 311.4182,-110.9473 312.9851,-117.7697"></polygon>
+<text text-anchor="middle" x="173.2318" y="-236.0146" font-family="Times,serif" font-size="14.00" fill="#000000">Basic needs/Self-improvement</text>
+</g>
+<!-- studying&#45;&gt;studying -->
+<g id="edge3" class="edge">
+<title>studying-&gt;studying</title>
+<path fill="none" stroke="#000000" d="M416.6636,-292.8626C429.3586,-292.778 439.4203,-290.0287 439.4203,-284.6146 439.4203,-280.8078 434.4459,-278.3185 427.0794,-277.1465"></path>
+<polygon fill="#000000" stroke="#000000" points="426.897,-273.6232 416.6636,-276.3666 426.3743,-280.6036 426.897,-273.6232"></polygon>
+<text text-anchor="middle" x="550.1085" y="-280.4146" font-family="Times,serif" font-size="14.00" fill="#000000">Play in Doom and &gt;4 hours of studying</text>
+</g>
+<!-- studying&#45;&gt;eat -->
+<g id="edge4" class="edge">
+<title>studying-&gt;eat</title>
+<path fill="none" stroke="#000000" d="M370.287,-266.5026C368.3677,-260.8415 366.4448,-254.5287 365.1185,-248.6146 356.4224,-209.8391 351.9482,-164.0273 349.8203,-135.2425"></path>
+<polygon fill="#000000" stroke="#000000" points="353.3,-134.8278 349.1156,-125.0943 346.3168,-135.3127 353.3,-134.8278"></polygon>
+<text text-anchor="middle" x="392.3559" y="-191.6146" font-family="Times,serif" font-size="14.00" fill="#000000">Basic needs</text>
+</g>
+<!-- pull_up -->
+<g id="node4" class="node">
+<title>pull_up</title>
+<ellipse fill="none" stroke="#000000" cx="485.1185" cy="-195.8146" rx="40.5925" ry="18"></ellipse>
+<text text-anchor="middle" x="485.1185" y="-191.6146" font-family="Times,serif" font-size="14.00" fill="#000000">pull_up</text>
+</g>
+<!-- studying&#45;&gt;pull_up -->
+<g id="edge5" class="edge">
+<title>studying-&gt;pull_up</title>
+<path fill="none" stroke="#000000" d="M420.4229,-280.5947C481.7267,-274.4607 587.6847,-262.0519 599.1185,-248.6146 621.0098,-222.8874 574.6893,-208.9642 534.6784,-201.9789"></path>
+<polygon fill="#000000" stroke="#000000" points="535.1204,-198.5048 524.6874,-200.3495 533.9936,-205.4135 535.1204,-198.5048"></polygon>
+<text text-anchor="middle" x="655.0491" y="-236.0146" font-family="Times,serif" font-size="14.00" fill="#000000">Self-improvement</text>
+</g>
+<!-- doom_eternal -->
+<g id="node5" class="node">
+<title>doom_eternal</title>
+<ellipse fill="none" stroke="#000000" cx="842.1185" cy="-107.0146" rx="64.2669" ry="18"></ellipse>
+<text text-anchor="middle" x="842.1185" y="-102.8146" font-family="Times,serif" font-size="14.00" fill="#000000">doom_eternal</text>
+</g>
+<!-- studying&#45;&gt;doom_eternal -->
+<g id="edge6" class="edge">
+<title>studying-&gt;doom_eternal</title>
+<path fill="none" stroke="#000000" d="M421.6832,-284.0704C508.0026,-282.4119 694.5716,-275.7059 752.1185,-248.6146 802.6737,-224.8148 819.2184,-211.2213 841.1185,-159.8146 844.3166,-152.3076 845.4118,-143.6387 845.4799,-135.523"></path>
+<polygon fill="#000000" stroke="#000000" points="848.9685,-135.1679 845.0681,-125.3172 841.9742,-135.4502 848.9685,-135.1679"></polygon>
+<text text-anchor="middle" x="942.8067" y="-191.6146" font-family="Times,serif" font-size="14.00" fill="#000000">Play in Doom and &lt;4 hours of studying</text>
+</g>
+<!-- eat&#45;&gt;studying -->
+<g id="edge8" class="edge">
+<title>eat-&gt;studying</title>
+<path fill="none" stroke="#000000" d="M325.29,-117.0635C288.8584,-134.6002 224.024,-172.85 248.2573,-213.8146 265.7722,-243.4222 300.5573,-261.4778 329.5757,-271.939"></path>
+<polygon fill="#000000" stroke="#000000" points="328.5679,-275.2931 339.1624,-275.2013 330.823,-268.6663 328.5679,-275.2931"></polygon>
+<text text-anchor="middle" x="300.0491" y="-191.6146" font-family="Times,serif" font-size="14.00" fill="#000000">Self-improvement</text>
+</g>
+<!-- sleep -->
+<g id="node6" class="node">
+<title>sleep</title>
+<ellipse fill="none" stroke="#000000" cx="437.1185" cy="-18.1073" rx="30.7558" ry="18"></ellipse>
+<text text-anchor="middle" x="437.1185" y="-13.9073" font-family="Times,serif" font-size="14.00" fill="#000000">sleep</text>
+</g>
+<!-- eat&#45;&gt;sleep -->
+<g id="edge7" class="edge">
+<title>eat-&gt;sleep</title>
+<path fill="none" stroke="#000000" d="M372.4591,-98.6835C386.498,-92.8231 403.5955,-83.7385 415.1185,-71.0146 421.6197,-63.8358 426.3579,-54.4651 429.7338,-45.6079"></path>
+<polygon fill="#000000" stroke="#000000" points="433.1049,-46.5646 432.9879,-35.9704 426.4727,-44.3252 433.1049,-46.5646"></polygon>
+<text text-anchor="middle" x="459.3559" y="-58.4146" font-family="Times,serif" font-size="14.00" fill="#000000">Basic needs</text>
+</g>
+<!-- pull_up&#45;&gt;studying -->
+<g id="edge11" class="edge">
+<title>pull_up-&gt;studying</title>
+<path fill="none" stroke="#000000" d="M449.8421,-204.9888C419.0025,-213.3633 378.4203,-225.386 373.7421,-231.8146 368.6701,-238.7844 367.7704,-247.7394 368.6656,-256.2877"></path>
+<polygon fill="#000000" stroke="#000000" points="365.2621,-257.1357 370.4879,-266.3521 372.1501,-255.8884 365.2621,-257.1357"></polygon>
+<text text-anchor="middle" x="484.8067" y="-236.0146" font-family="Times,serif" font-size="14.00" fill="#000000">Play in Doom and &gt;4 hours of studying</text>
+</g>
+<!-- pull_up&#45;&gt;eat -->
+<g id="edge13" class="edge">
+<title>pull_up-&gt;eat</title>
+<path fill="none" stroke="#000000" d="M451.8992,-185.3413C435.3905,-179.285 415.6114,-170.6948 399.6437,-159.8146 387.784,-151.7336 376.4354,-140.6118 367.4224,-130.6589"></path>
+<polygon fill="#000000" stroke="#000000" points="369.9481,-128.2303 360.7297,-123.008 364.6794,-132.8391 369.9481,-128.2303"></polygon>
+<text text-anchor="middle" x="433.3559" y="-147.2146" font-family="Times,serif" font-size="14.00" fill="#000000">Basic needs</text>
+</g>
+<!-- pull_up&#45;&gt;doom_eternal -->
+<g id="edge12" class="edge">
+<title>pull_up-&gt;doom_eternal</title>
+<path fill="none" stroke="#000000" d="M483.3514,-177.816C483.2774,-166.1985 485.3749,-151.6868 494.7421,-143.0146 514.3814,-124.8325 672.1779,-114.6059 768.2116,-110.0101"></path>
+<polygon fill="#000000" stroke="#000000" points="768.6284,-113.4945 778.4535,-109.53 768.3006,-106.5022 768.6284,-113.4945"></polygon>
+<text text-anchor="middle" x="604.8067" y="-147.2146" font-family="Times,serif" font-size="14.00" fill="#000000">Play in Doom and &lt;4 hours of studying</text>
+</g>
+<!-- doom_eternal&#45;&gt;doom_eternal -->
+<g id="edge14" class="edge">
+<title>doom_eternal-&gt;doom_eternal</title>
+<path fill="none" stroke="#000000" d="M899.688,-115.1357C913.7712,-114.5341 924.2518,-111.8271 924.2518,-107.0146 924.2518,-103.4428 918.4786,-101.0308 909.7442,-99.7786"></path>
+<polygon fill="#000000" stroke="#000000" points="909.9564,-96.2838 899.688,-98.8935 909.3426,-103.2569 909.9564,-96.2838"></polygon>
+</g>
+<!-- end -->
+<g id="node8" class="node">
+<title>end</title>
+<polygon fill="none" stroke="#000000" points="860.3337,-36.3225 823.9032,-36.3225 823.9032,.1079 860.3337,.1079 860.3337,-36.3225"></polygon>
+<polyline fill="none" stroke="#000000" points="835.9032,-36.3225 823.9032,-24.3225 "></polyline>
+<polyline fill="none" stroke="#000000" points="823.9032,-11.8921 835.9032,.1079 "></polyline>
+<polyline fill="none" stroke="#000000" points="848.3337,.1079 860.3337,-11.8921 "></polyline>
+<polyline fill="none" stroke="#000000" points="860.3337,-24.3225 848.3337,-36.3225 "></polyline>
+<text text-anchor="middle" x="842.1185" y="-13.9073" font-family="Times,serif" font-size="14.00" fill="#000000">end</text>
+</g>
+<!-- doom_eternal&#45;&gt;end -->
+<g id="edge15" class="edge">
+<title>doom_eternal-&gt;end</title>
+<path fill="none" stroke="#000000" d="M842.1185,-88.5929C842.1185,-76.5529 842.1185,-60.5791 842.1185,-46.8827"></path>
+<polygon fill="#000000" stroke="#000000" points="845.6186,-46.5053 842.1185,-36.5054 838.6186,-46.5054 845.6186,-46.5053"></polygon>
+<text text-anchor="middle" x="875.3559" y="-58.4146" font-family="Times,serif" font-size="14.00" fill="#000000">Basic needs</text>
+</g>
+<!-- sleep&#45;&gt;studying -->
+<g id="edge9" class="edge">
+<title>sleep-&gt;studying</title>
+<path fill="none" stroke="#000000" d="M467.9694,-21.2716C528.099,-29.2913 659.9891,-56.388 716.1185,-143.0146 741.6809,-182.466 742.6837,-214.7124 710.1185,-248.6146 691.2286,-268.28 521.2456,-278.4544 431.7249,-282.4885"></path>
+<polygon fill="#000000" stroke="#000000" points="431.3208,-279.0028 421.4843,-282.939 431.6285,-285.996 431.3208,-279.0028"></polygon>
+<text text-anchor="middle" x="776.0491" y="-147.2146" font-family="Times,serif" font-size="14.00" fill="#000000">Self-improvement</text>
+</g>
+<!-- sleep&#45;&gt;eat -->
+<g id="edge10" class="edge">
+<title>sleep-&gt;eat</title>
+<path fill="none" stroke="#000000" d="M408.812,-25.3829C384.489,-32.2749 352.1777,-43.185 344.6437,-54.2146 339.6532,-61.5206 338.9096,-70.8027 339.9237,-79.5398"></path>
+<polygon fill="#000000" stroke="#000000" points="336.4886,-80.2119 341.7724,-89.3952 343.3686,-78.9213 336.4886,-80.2119"></polygon>
+<text text-anchor="middle" x="378.3559" y="-58.4146" font-family="Times,serif" font-size="14.00" fill="#000000">Basic needs</text>
+</g>
+<!-- Play in Doom/Self&#45;improvement -->
+<g id="node7" class="node">
+<title>Play in Doom/Self-improvement</title>
+<ellipse fill="none" stroke="#000000" cx="234.1185" cy="-373.4146" rx="137.7608" ry="18"></ellipse>
+<text text-anchor="middle" x="234.1185" y="-369.2146" font-family="Times,serif" font-size="14.00" fill="#000000">Play in Doom/Self-improvement</text>
+</g>
+</g>
+</g><defs><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.333; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="svg-pan-zoom-controls" transform="translate(681 683) scale(0.75)" class="svg-pan-zoom-control"><g id="svg-pan-zoom-zoom-in" transform="translate(30.5 5) scale(0.015)" class="svg-pan-zoom-control"><rect x="0" y="0" width="1500" height="1400" class="svg-pan-zoom-control-background"></rect><path d="M1280 576v128q0 26 -19 45t-45 19h-320v320q0 26 -19 45t-45 19h-128q-26 0 -45 -19t-19 -45v-320h-320q-26 0 -45 -19t-19 -45v-128q0 -26 19 -45t45 -19h320v-320q0 -26 19 -45t45 -19h128q26 0 45 19t19 45v320h320q26 0 45 19t19 45zM1536 1120v-960 q0 -119 -84.5 -203.5t-203.5 -84.5h-960q-119 0 -203.5 84.5t-84.5 203.5v960q0 119 84.5 203.5t203.5 84.5h960q119 0 203.5 -84.5t84.5 -203.5z" class="svg-pan-zoom-control-element"></path></g><g id="svg-pan-zoom-reset-pan-zoom" transform="translate(5 35) scale(0.4)" class="svg-pan-zoom-control"><rect x="2" y="2" width="182" height="58" class="svg-pan-zoom-control-background"></rect><path d="M33.051,20.632c-0.742-0.406-1.854-0.609-3.338-0.609h-7.969v9.281h7.769c1.543,0,2.701-0.188,3.473-0.562c1.365-0.656,2.048-1.953,2.048-3.891C35.032,22.757,34.372,21.351,33.051,20.632z" class="svg-pan-zoom-control-element"></path><path d="M170.231,0.5H15.847C7.102,0.5,0.5,5.708,0.5,11.84v38.861C0.5,56.833,7.102,61.5,15.847,61.5h154.384c8.745,0,15.269-4.667,15.269-10.798V11.84C185.5,5.708,178.976,0.5,170.231,0.5z M42.837,48.569h-7.969c-0.219-0.766-0.375-1.383-0.469-1.852c-0.188-0.969-0.289-1.961-0.305-2.977l-0.047-3.211c-0.03-2.203-0.41-3.672-1.142-4.406c-0.732-0.734-2.103-1.102-4.113-1.102h-7.05v13.547h-7.055V14.022h16.524c2.361,0.047,4.178,0.344,5.45,0.891c1.272,0.547,2.351,1.352,3.234,2.414c0.731,0.875,1.31,1.844,1.737,2.906s0.64,2.273,0.64,3.633c0,1.641-0.414,3.254-1.242,4.84s-2.195,2.707-4.102,3.363c1.594,0.641,2.723,1.551,3.387,2.73s0.996,2.98,0.996,5.402v2.32c0,1.578,0.063,2.648,0.19,3.211c0.19,0.891,0.635,1.547,1.333,1.969V48.569z M75.579,48.569h-26.18V14.022h25.336v6.117H56.454v7.336h16.781v6H56.454v8.883h19.125V48.569z M104.497,46.331c-2.44,2.086-5.887,3.129-10.34,3.129c-4.548,0-8.125-1.027-10.731-3.082s-3.909-4.879-3.909-8.473h6.891c0.224,1.578,0.662,2.758,1.316,3.539c1.196,1.422,3.246,2.133,6.15,2.133c1.739,0,3.151-0.188,4.236-0.562c2.058-0.719,3.087-2.055,3.087-4.008c0-1.141-0.504-2.023-1.512-2.648c-1.008-0.609-2.607-1.148-4.796-1.617l-3.74-0.82c-3.676-0.812-6.201-1.695-7.576-2.648c-2.328-1.594-3.492-4.086-3.492-7.477c0-3.094,1.139-5.664,3.417-7.711s5.623-3.07,10.036-3.07c3.685,0,6.829,0.965,9.431,2.895c2.602,1.93,3.966,4.73,4.093,8.402h-6.938c-0.128-2.078-1.057-3.555-2.787-4.43c-1.154-0.578-2.587-0.867-4.301-0.867c-1.907,0-3.428,0.375-4.565,1.125c-1.138,0.75-1.706,1.797-1.706,3.141c0,1.234,0.561,2.156,1.682,2.766c0.721,0.406,2.25,0.883,4.589,1.43l6.063,1.43c2.657,0.625,4.648,1.461,5.975,2.508c2.059,1.625,3.089,3.977,3.089,7.055C108.157,41.624,106.937,44.245,104.497,46.331z M139.61,48.569h-26.18V14.022h25.336v6.117h-18.281v7.336h16.781v6h-16.781v8.883h19.125V48.569z M170.337,20.14h-10.336v28.43h-7.266V20.14h-10.383v-6.117h27.984V20.14z" class="svg-pan-zoom-control-element"></path></g><g id="svg-pan-zoom-zoom-out" transform="translate(30.5 70) scale(0.015)" class="svg-pan-zoom-control"><rect x="0" y="0" width="1500" height="1400" class="svg-pan-zoom-control-background"></rect><path d="M1280 576v128q0 26 -19 45t-45 19h-896q-26 0 -45 -19t-19 -45v-128q0 -26 19 -45t45 -19h896q26 0 45 19t19 45zM1536 1120v-960q0 -119 -84.5 -203.5t-203.5 -84.5h-960q-119 0 -203.5 84.5t-84.5 203.5v960q0 119 84.5 203.5t203.5 84.5h960q119 0 203.5 -84.5 t84.5 -203.5z" class="svg-pan-zoom-control-element"></path></g></g></svg></a></div>
+<div id="status"></div>
+<div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/dreampuf/graphvizonline">Fork me on GitHub</a>
+    </div>
+</div>
+
+<script src="./Gaprh_files/ace.js.завантаження" type="text/javascript" charset="utf-8"></script>
+<script src="./Gaprh_files/lz-string.min.js.завантаження" integrity="sha512-qtX0GLM3qX8rxJN1gyDfcnMFFrKvixfoEOwbBib9VafR5vbChV5LeE5wSI/x+IlCkTY5ZFddFDCCfaVJJNnuKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  (function (document) {
+    //http://stackoverflow.com/a/10372280/398634
+    window.URL = window.URL || window.webkitURL;
+    var el_stetus = document.getElementById("status"),
+      t_stetus = -1,
+      reviewer = document.getElementById("review"),
+      scale = window.devicePixelRatio || 1,
+      downloadBtn = document.getElementById("download"),
+      editor = ace.edit("editor"),
+      lastHD = -1,
+      worker = null,
+      parser = new DOMParser(),
+      showError = null,
+      formatEl = document.querySelector("#format select"),
+      engineEl = document.querySelector("#engine select"),
+      rawEl = document.querySelector("#raw input"),
+      shareEl = document.querySelector("#share"),
+      shareURLEl = document.querySelector("#shareurl"),
+      errorEl = document.querySelector("#error");
+
+    function show_status(text, hide) {
+      hide = hide || 0;
+      clearTimeout(t_stetus);
+      el_stetus.innerHTML = text;
+      if (hide) {
+        t_stetus = setTimeout(function () {
+          el_stetus.innerHTML = "";
+        }, hide);
+      }
+    }
+
+    function show_error(e) {
+      show_status("error", 500);
+      reviewer.classList.remove("working");
+      reviewer.classList.add("error");
+
+      var message = e.message === undefined ? "An error occurred while processing the graph input." : e.message;
+      while (errorEl.firstChild) {
+        errorEl.removeChild(errorEl.firstChild);
+      }
+      errorEl.appendChild(document.createTextNode(message));
+    }
+
+    function svgXmlToImage(svgXml, callback) {
+      var pngImage = new Image(), svgImage = new Image();
+
+      svgImage.onload = function () {
+        var canvas = document.createElement("canvas");
+        canvas.width = svgImage.width * scale;
+        canvas.height = svgImage.height * scale;
+
+        var context = canvas.getContext("2d");
+        context.drawImage(svgImage, 0, 0, canvas.width, canvas.height);
+
+        pngImage.src = canvas.toDataURL("image/png");
+        pngImage.width = svgImage.width;
+        pngImage.height = svgImage.height;
+
+        if (callback !== undefined) {
+          callback(null, pngImage);
+        }
+      }
+
+      svgImage.onerror = function (e) {
+        if (callback !== undefined) {
+          callback(e);
+        }
+      }
+      svgImage.src = svgXml;
+    }
+
+    function copyShareURL(e) {
+      var content = encodeURIComponent(editor.getSession().getDocument().getValue());
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://api-ssl.bitly.com/v4/shorten", true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      /* love and peace; don't let me down :) */
+      xhr.setRequestHeader('Authorization', 'Bearer 5959ae0ffc42f5e6b8cee4ebf1b7ee0218bfc291');
+      const longUrl = new URL(location.href);
+      longUrl.hash = content;
+
+      xhr.send(JSON.stringify({ "long_url": longUrl.toString() }));
+      xhr.onreadystatechange = function () {
+        if (this.readyState != 4) return;
+
+        shareURLEl.style.display = "inline";
+        if (this.status >= 200 && this.status < 300 && this.responseText.indexOf('"link":') >= 0) {
+          var result = JSON.parse(this.responseText);
+          shareURLEl.value = result.link;
+        } else {
+          const compressedContent = LZString.compressToEncodedURIComponent(editor.getSession().getDocument().getValue());
+          const compressedUrl = new URL(location.href);
+          compressedUrl.searchParams.append("compressed", compressedContent);
+          compressedUrl.hash = "";
+
+          shareURLEl.value = compressedUrl.toString();
+        }
+      };
+    }
+
+    function copyToClipboard(str) {
+      const el = document.createElement('textarea');
+      el.value = str;
+      el.setAttribute('readonly', '');
+      el.style.position = 'absolute';
+      el.style.left = '-9999px';
+      document.body.appendChild(el);
+      const selected =
+        document.getSelection().rangeCount > 0
+          ? document.getSelection().getRangeAt(0)
+          : false;
+      el.select();
+      var result = document.execCommand('copy')
+      document.body.removeChild(el);
+      if (selected) {
+        document.getSelection().removeAllRanges();
+        document.getSelection().addRange(selected);
+      }
+      return result;
+    };
+
+    function renderGraph() {
+      reviewer.classList.add("working");
+      reviewer.classList.remove("error");
+
+      if (worker) {
+        worker.terminate();
+      }
+
+      worker = new Worker("full.render.js");
+      worker.addEventListener("message", function (e) {
+        if (typeof e.data.error !== "undefined") {
+          var event = new CustomEvent("error", {"detail": new Error(e.data.error.message)});
+          worker.dispatchEvent(event);
+          return
+        }
+        show_status("done", 500);
+        reviewer.classList.remove("working");
+        reviewer.classList.remove("error");
+        updateOutput(e.data.result);
+      }, false);
+      worker.addEventListener('error', function (e) {
+        show_error(e.detail);
+      }, false);
+
+      show_status("rendering...");
+      var params = {
+        "src": editor.getSession().getDocument().getValue(),
+        "id": new Date().toJSON(),
+        "options": {
+          "files": [],
+          "format": formatEl.value === "png-image-element" ? "svg" : formatEl.value,
+          "engine": engineEl.value
+        },
+      };
+      worker.postMessage(params);
+    }
+
+    function updateState() {
+      var content = encodeURIComponent(editor.getSession().getDocument().getValue());
+      history.pushState({"content": content}, "", "#" + content)
+    }
+
+    function updateOutput(result) {
+      if (formatEl.value === "svg") {
+        document.querySelector("#raw").classList.remove("disabled");
+        rawEl.disabled = false;
+      } else {
+        document.querySelector("#raw").classList.add("disabled");
+        rawEl.disabled = true;
+      }
+
+      var text = reviewer.querySelector("#text");
+      if (text) {
+        reviewer.removeChild(text);
+      }
+
+      var a = reviewer.querySelector("a");
+      if (a) {
+        reviewer.removeChild(a);
+      }
+
+      if (!result) {
+        return;
+      }
+
+      reviewer.classList.remove("working");
+      reviewer.classList.remove("error");
+
+      if (formatEl.value == "svg" && !rawEl.checked) {
+        var svg = parser.parseFromString(result, "image/svg+xml");
+        //get svg source.
+        var serializer = new XMLSerializer();
+        var source = serializer.serializeToString(svg);
+        //add name spaces.
+        if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
+            source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+        }
+        if(!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)){
+            source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
+        }
+        //add xml declaration
+        if (!source.startsWith("<?xml version")) {
+            source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
+        }
+        // https://stackoverflow.com/questions/18925210/download-blob-content-using-specified-charset
+        //const blob = new Blob(["\ufeff", svg], {type: 'image/svg+xml;charset=utf-8'});
+        const url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
+        downloadBtn.href = url;
+        downloadBtn.download = "graphviz.svg";
+        var a = document.createElement("a");
+        var svgEl = svg.documentElement;
+        a.appendChild(svgEl);
+        reviewer.appendChild(a);
+        svgPanZoom(svgEl, {
+          zoomEnabled: true,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true,
+        });
+      } else if (formatEl.value == "png-image-element") {
+        var resultWithPNGHeader = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(result)));
+        svgXmlToImage(resultWithPNGHeader, function (err, image) {
+          if (err) {
+            show_error(err)
+            return
+          }
+          image.setAttribute("title", "graphviz");
+          downloadBtn.href = image.src;
+          downloadBtn.download = "graphviz.png";
+          var a = document.createElement("a");
+          a.appendChild(image);
+          reviewer.appendChild(a);
+        })
+      } else {
+        var text = document.createElement("div");
+        text.id = "text";
+        text.appendChild(document.createTextNode(result));
+        reviewer.appendChild(text);
+      }
+
+      updateState()
+    }
+
+    editor.setTheme("ace/theme/twilight");
+    editor.getSession().setMode("ace/mode/dot");
+    editor.getSession().on("change", function () {
+      clearTimeout(lastHD);
+      lastHD = setTimeout(renderGraph, 1500);
+    });
+
+    window.onpopstate = function(event) {
+      if (event.state != null && event.state.content != undefined) {
+        editor.getSession().setValue(decodeURIComponent(event.state.content));
+      }
+    };
+
+    formatEl.addEventListener("change", renderGraph);
+    engineEl.addEventListener("change", renderGraph);
+    rawEl.addEventListener("change", renderGraph);
+    share.addEventListener("click", copyShareURL);
+
+    // Since apparently HTMLCollection does not implement the oh so convenient array functions
+    HTMLOptionsCollection.prototype.indexOf = function(name) {
+      for (let i = 0; i < this.length; i++) {
+        if (this[i].value == name) {
+          return i;
+        }
+      }
+      
+      return -1;
+    };
+
+    /* come from sharing */
+    const params = new URLSearchParams(location.search.substring(1));
+    if (params.has('engine')) {
+      const engine = params.get('engine');
+      const index = engineEl.options.indexOf(engine);
+      if (index > -1) { // if index exists
+        engineEl.selectedIndex = index;
+      } else {
+        show_error({ message: `invalid engine ${engine} selected` });
+      }
+    }
+
+    if (params.has('raw')) {
+      editor.getSession().setValue(params.get('raw'));
+      renderGraph();
+    } else if (params.has('compressed')) {
+      const compressed = params.get('compressed');
+      editor.getSession().setValue(LZString.decompressFromEncodedURIComponent(compressed));
+    } else if (params.has('url')) {
+      const url = params.get('url');
+      let ok = false;
+      fetch(url)
+        .then(res => {
+          ok = res.ok;
+          return res.text();
+        })
+        .then(res => {
+          if (!ok) {
+            throw { message: res };
+          }
+
+          editor.getSession().setValue(res);
+          renderGraph();
+        }).catch(e => {
+          show_error(e);
+        });
+    } else if (location.hash.length > 1) {
+      editor.getSession().setValue(decodeURIComponent(location.hash.substring(1)));
+    } else if (editor.getValue()) { // Init
+      renderGraph();
+    }
+
+  })(document);
+</script>
+<script src="./Gaprh_files/viz.js.завантаження" type="text/javascript" charset="utf-8"></script>
+<script src="./Gaprh_files/svg-pan-zoom.min.js.завантаження" type="text/javascript" charset="utf-8"></script>
+
+
+</body></html>
