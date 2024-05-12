@@ -204,7 +204,7 @@ you need to study more (cope harder)"))
         except StopIteration:
             self.day_end = True
 
-def wait(text:str, interval:float = 0.000000005):
+def wait(text:str, interval:float = 0.05):
     """
     Makes sure that there is a small delay before each letter
     """
