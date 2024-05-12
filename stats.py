@@ -3,7 +3,7 @@ gives a statistics about Olegs day
 """
 
 import matplotlib.pyplot as plt
-import laboratory_4.oleg as oleg
+import oleg as oleg
 
 
 def test(days):
@@ -21,7 +21,7 @@ def test(days):
         lst_sleep.append(sleep)
         lst_days.append(i + 1)
 
-    fig, axs = plt.subplots(1, 3, figsize=(15, 5))
+    _, axs = plt.subplots(1, 3, figsize=(15, 5))
 
     axs[0].plot(lst_days, lst_doom, marker='o', linestyle='-')
     axs[0].set_xlabel('Days')
